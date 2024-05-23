@@ -1,0 +1,376 @@
+:root {
+    --navbar-side-margin: 7.75rem;
+    --side-margin: 20em;
+    --navbar-height: 5.1em;
+    --navbar-top: 44px;
+    --page-navbar-distance: 7em;
+    --page-top-margin: calc(var(--navbar-height) + var(--navbar-top) + var(--page-navbar-distance));
+    --navbar-z-index: 100000;
+    --border-radius-small: 9px;
+    --border-radius-medium: 13px;
+    --border-radius-big: 20px;
+    --border-radius-large: 45px;
+    --green-200: hsl(96, 63%, 58%);
+    --green-400: hsl(94, 59%, 47%);
+    --yellow-200: hsl(40, 100%, 62%);
+    --yellow-400: hsl(40, 100%, 47%);
+    --blue-200: hsl(230, 79%, 71%);
+    --blue-400: hsl(229, 53%, 61%);
+    --purple-200: hsl(246, 79%, 71%);
+    --purple-400: hsl(246, 79%, 67%);
+    --red-200: hsl(358, 71%, 58%);
+    --red-400: hsl(358, 50%, 50%);
+    --brown-200: hsl(20, 56%, 57%);
+    --hsl-yellow-200: 40, 100%, 62%;
+    --hsl-yellow-400: 40, 100%, 47%;
+    --gray-1000: #070707;
+    --gray-800: #131313;
+    --gray-700: #1A1A1A;
+    --gray-600: #1e1e1e;
+    --gray-500: #232323;
+    --gray-300: #343434;
+    --gray-200: #4F4F4F;
+    --gray-100: #828282;
+    --gray-50: #B9B9B9;
+    --gray-0: #E1E1E1;
+    --rgb-gray-1000: 7, 7, 7;
+    --rgb-gray-800: 19, 19, 19;
+    --rgb-gray-700: 26, 26, 26;
+    --text-opacity-convergence: 0.9;
+    --text-opacity-contrast: 0.8;
+    --text-opacity-barely: 0.6
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-SemiBoldItalic.ttf) format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-ExtraLight.ttf) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-ExtraBold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-BlackItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-Thin.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-ExtraLightItalic.ttf) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-Italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-MediumItalic.ttf) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-ThinItalic.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/poppins/Poppins-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap
+}
+
+@media screen and (max-width: 1900px) {
+    :root {
+        --side-margin: 10em
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    :root {
+        --navbar-side-margin: 3.75em
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --side-margin: 5%;
+        --navbar-side-margin: 5%
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins,sans-serif;
+    color: #fff;
+    background-color: var(--gray-800);
+    width: 100%;
+    overflow-x: hidden;
+    scrollbar-gutter: stable both-edges
+}
+
+* {
+    box-sizing: border-box
+}
+
+.error-hidden {
+    display: none
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+a:hover {
+    text-decoration: none
+}
+
+a.animated {
+    position: relative;
+    z-index: 1;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--purple-200);
+    cursor: pointer
+}
+
+a.animated::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background: var(--purple-400);
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: 150ms linear
+}
+
+a.animated:hover::before {
+    visibility: visible;
+    transform: scaleX(1)
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none
+}
+
+select::-ms-expand {
+    display: none
+}
+
+textarea {
+    border: 0;
+    background-color: var(--gray-500);
+    border-radius: var(--border-radius-small);
+    resize: vertical;
+    width: 100%;
+    min-height: 250px;
+    padding: .5em;
+    font-family: inherit;
+    font-size: 1rem
+}
+
+textarea:focus {
+    outline: none
+}
+
+.simple_button {
+    --clr: var(--purple-200);
+    --hv-clr: var(--purple-400);
+    width: fit-content;
+    border-radius: var(--border-radius-medium);
+    border: none;
+    color: #fff;
+    font-size: .9em;
+    font-weight: 400;
+    padding: .5em 1.7em;
+    transition: background-color 200ms;
+    cursor: pointer;
+    background-color: var(--clr);
+    font-family: inherit!important
+}
+
+.simple_button:hover {
+    background-color: var(--hv-clr)
+}
+
+a.simple_button {
+    font-family: inherit!important;
+    text-decoration: none;
+    text-align: center
+}
+
+a.simple_button:hover {
+    text-decoration: none
+}
+
+.simple_input {
+    background-color: var(--gray-500);
+    border-radius: var(--border-radius-small);
+    border: 0;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: .9;
+    padding: .5em;
+    font-family: inherit
+}
+
+.simple_input:read-only {
+    color: var(--gray-50)
+}
+
+.simple_input:focus {
+    outline: none
+}
+
+input.simple_input[type=date] {
+    font-family: inherit
+}
+
+.simple_checkbox {
+    width: 1em;
+    height: 1em;
+    background-color: var(--gray-300);
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 200ms
+}
+
+.simple_checkbox:checked {
+    background-color: var(--purple-200)
+}
+
+.required-star {
+    color: var(--purple-200);
+    font-weight: 600
+}
+
+.highlight {
+    color: var(--purple-200)
+}
